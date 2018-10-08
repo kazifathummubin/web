@@ -1,0 +1,535 @@
+/*
+*******************************************
+*******************************************
+
+Template Name: portfolio
+Template URL: http://
+Description:  Personal Portfolio Template.
+Author: Shefat production
+Author URL: https://
+Version: 1.0
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+This files contents are outlined below >>>>
+
+*** SEARCH EACH SECTION AS IT COMMENTS, YOU WILL GET THE RIGHT SECTION.
+
+**************************************************
+**************************************************
+
+==== CSS INDEX ===================================
+
+01 - defaul css
+02 - Common heading part css
+03 - back to top button
+
+==================================================*/
+/*================================================
+    01 - defaul css
+==================================================*/
+* {
+  padding: 0;
+  outline: 0;
+  margin: 0;
+}
+body,
+p,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'pooppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 60px;
+  line-height: 54px;
+  color: #080808;
+}
+h2 {
+  font-size: 59px;
+  line-height: auto;
+}
+h3 {
+  color: #0396ff;
+}
+h4 {
+  color: #0396ff;
+}
+h5 {
+  color: #0396ff;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 30px;
+}
+p {
+  color: #111111;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+/*fonts*/
+@font-face {
+  font-family: cyber;
+  src: url(../fonts/Cyberverse.ttf);
+}
+@font-face {
+  font-family: sans;
+  src: url(../fonts/digitalsansefmedium.ttf);
+}
+@font-face {
+  font-family: lucida;
+  src: url(../fonts/lucida.ttf);
+}
+/*mixins and variables start*/
+/*mixins and variables end*/
+.podtb {
+  padding: 30px 0px;
+}
+/*common css part end*/
+::-webkit-scrollbar {
+  width: 0px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4a0000;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*main css part start*/
+/**********************
+header part start 
+************************/
+#header .row .col-md-12 .banner {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  position: relative;
+}
+#header .row .col-md-12 .banner .frame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header .row .col-md-12 .banner .frame .top-left-bar {
+  height: 150px;
+  width: 506px;
+  background: url(../images/top-left-bar.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header .row .col-md-12 .banner .frame .top-right-bar {
+  height: 130px;
+  width: 275px;
+  background: url(../images/top-right-bar.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 64px;
+}
+#header .row .col-md-12 .banner .frame .left-bar {
+  height: 400px;
+  width: 75px;
+  background: url(../images/left-bar.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 45px;
+}
+#header .row .col-md-12 .banner .frame .right-bar {
+  height: 382px;
+  width: 61px;
+  background: url(../images/right-bar.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 3px;
+  top: 47px;
+}
+#header .row .col-md-12 .banner .frame .bottom-left-bar {
+  height: 90px;
+  width: 50%;
+  background: url(../images/bottom-left.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 33px;
+}
+#header .row .col-md-12 .banner .frame .bottom-right-bar {
+  height: 90px;
+  width: 47%;
+  background: url(../images/bottom-right.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+#header .row .col-md-12 .banner .row {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+#header .row .col-md-12 .banner .banner-left {
+  height: 100vh;
+  width: 100%;
+  /*.left-text-box {
+                        height: 200px;
+                        width: 340px;
+                        padding: 10px;
+                        background: rgba(69, 112, 195, 0.2);
+                        position: relative;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        .text-border-top {
+                            position: absolute;
+                            top: -16px;
+                            left: -5px;
+                            height: 29px;
+                            width: 103%;
+                            background: url(../images/banner-left-text-top-bar.png);
+                            background-size: 100% 100%;
+                            background-repeat: no-repeat;
+                        }
+                        .text-border-bottom {
+                            position: absolute;
+                            bottom: -16px;
+                            left: -5px;
+                            height: 29px;
+                            width: 103%;
+                            background: url(../images/banner-left-text-bottom-bar.png);
+                            background-size: 100% 100%;
+                            background-repeat: no-repeat;
+                        }
+                        h3 {
+                            font-family: cyber;
+                            padding-top: 10px;
+                        }
+                        h1 {
+                            font-family: sans;
+                            padding: 10px 0px;
+                            color: #f5f5f5;
+                            color: @blue;
+                        }
+                        h2 {
+                            font-family: lucida;
+                            font-size: 35px;
+                            color: rgba(69, 112, 195, 1);
+                        }
+                    }*/
+  position: relative;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body {
+  width: 680px;
+  height: 430px;
+  position: absolute;
+  top: 50%;
+  left: 90px;
+  transform: translate(0%, -50%);
+  background: url(../images/BANNER-LEFT-BORDER.png), url(../images/banner-left/baner-left-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner {
+  width: 100%;
+  height: 100%;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .profile-pic {
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin-top: 70px;
+  margin-left: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .profile-pic .l1 {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url(../images/banner-left/outer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: rotate 15s linear infinite;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .profile-pic .l2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/banner-left/inner1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75% 75%;
+  animation: rotate2 15s linear infinite;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .profile-pic .profile {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/prof.png);
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+  opacity: 1;
+  background-position: center center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .profile-pic .l3 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/banner-left/inner2.png);
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+  background-position: center center;
+  animation: rotate 90s linear infinite;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .profile-des {
+  width: 350px;
+  height: 300px;
+  float: left;
+  margin-top: 40px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .profile-des p {
+  color: #fdfaf1;
+  text-shadow: 0px 0px 15px #00c4fc;
+  font-size: 10px;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .profile-des p b {
+  color: #00c4fc;
+  font-style: italic;
+  font-size: 18px;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .profile-des h1 {
+  font-size: 35px;
+  color: #fdfaf1;
+  text-shadow: 0px 0px 15px #00c4fc;
+  line-height: 15px;
+  font-family: cyber;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .profile-des h3 {
+  font-size: 13px;
+  margin-top: 20px;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .profile-des h2 {
+  font-size: 16px;
+  font-family: sans;
+  color: #fdfaf1;
+  text-shadow: 0px 0px 15px #00c4fc;
+  line-height: 10px;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .profile-des ul li {
+  color: #0396ff;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 800;
+  overflow: hidden;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .profile-des ul li .skill {
+  width: 30%;
+  float: left;
+  height: 5px;
+  margin-right: 10px;
+  background: #fdfaf1;
+  box-shadow: 0px 0px 15px #00c4fc;
+  border-radius: 5px;
+  margin-top: 3px;
+  animation: skill 3s linear;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .left-backlight {
+  position: relative;
+  top: 7px;
+  left: 50%;
+  width: 2px;
+  height: 97%;
+  opacity: 1;
+  box-shadow: 0px 0px 30px #0396ff;
+  animation: backlight 15s linear infinite;
+}
+#header .row .col-md-12 .banner .banner-left .banner-left-body .left-inner .left-backlight:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00BCD4;
+  box-shadow: 0px 0px 30px #0396ff;
+  opacity: .1;
+  top: 0;
+  left: 0;
+  content: '';
+}
+#header .row .col-md-12 .banner .banner-right {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#header .row .col-md-12 .banner .banner-right .menu {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  right: -210px;
+  top: 115px;
+}
+#header .row .col-md-12 .banner .banner-right .menu .mc1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../images/banner-right-cirlcles/c1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: rotate 25s linear infinite;
+}
+#header .row .col-md-12 .banner .banner-right .menu .mc2 {
+  height: 295px;
+  width: 295px;
+  background: url(../images/banner-right-cirlcles/c2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  animation: rotate2 10s linear infinite;
+  border-radius: 50%;
+}
+#header .row .col-md-12 .banner .banner-right .menu .mc3 {
+  height: 255px;
+  width: 255px;
+  background: url(../images/banner-right-cirlcles/c3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 13%;
+  left: 13%;
+  animation: rotate 70s linear infinite;
+  border-radius: 50%;
+}
+#header .row .col-md-12 .banner .banner-right .menu .mc4 {
+  height: 215px;
+  width: 215px;
+  background: url(../images/banner-right-cirlcles/4.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 19%;
+  left: 19%;
+  animation: rotate2 70s linear infinite;
+  border-radius: 50%;
+}
+#header .row .col-md-12 .banner .banner-right .menu .mc5 {
+  height: 180px;
+  width: 180px;
+  background: url(../images/banner-right-cirlcles/c5.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: absolute;
+  top: 24%;
+  left: 24%;
+  animation: rotate 70s linear infinite;
+  border-radius: 50%;
+}
+/**********************
+header part end 
+************************/
+/**********************
+ part start 
+************************/
+/**********************
+ part end
+************************/
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes skill {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes backlight {
+  0% {
+    left: 5%;
+  }
+  100% {
+    left: 95%;
+  }
+}
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
